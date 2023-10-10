@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tyuiu.PustobaevDO.Sprint1.Task1.V23.Lib;
 
-using Tyuiu.PustobaevDO.Sprint1.Task0.V11.Lib;
-
-namespace Tyuiu.PustobaevDO.Sprint1.Task0.V11
+namespace Tyuiu.PustobaevDO.Sprint1.Task1.V23
 {
     class Program
     {
@@ -19,27 +18,30 @@ namespace Tyuiu.PustobaevDO.Sprint1.Task0.V11
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Базовые навыки работы C#                                          *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #11                                                             *");
+            Console.WriteLine("* Задание #1                                                              *");
+            Console.WriteLine("* Вариант #23                                                             *");
             Console.WriteLine("* Выполнил Пустобаев Дмитрий Олегович | ИСПб-23-1                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет выражение 4*5/2-18/2/3            *");
-            Console.WriteLine("* и печатает результат на экране.                                         *");
+            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
+            Console.WriteLine("* вычисляет результат по формуле (x*Pi)/(2*a) и печатает его на экране.   *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* 4*5/2-18/2/3                                                            *");
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("*РЕЗУЛЬТАТ:                                                               *");
-            Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.Calculate());
+            double x, y;
+            Console.WriteLine("Введите значение X:");
+            x = Convert.ToDouble(Console.ReadLine());
 
+            Console.WriteLine("Введите значение Y:");
+            y = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine(" РЕЗУЛЬТАТ:                                                               *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine(ds.Calculate(x, y));
             Console.ReadLine();
-
-
         }
     }
 }
